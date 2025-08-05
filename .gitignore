@@ -1,0 +1,60 @@
+# 忽略 vscode 相关文件
+.vscode/
+
+# 忽略日志文件
+*.log
+logs/
+*.pid
+hs_err_pid*
+
+# 忽略 IntelliJ IDEA 相关文件
+.idea/
+
+# 忽略 vscode 相关文件
+.vscode/
+
+# 忽略 Maven 或 Gradle 相关的编译输出
+target/
+out/
+*.class
+dist/
+deploy
+
+# 忽略日志文件
+*.log
+logs/
+*.pid
+hs_err_pid*
+
+# 忽略操作系统相关的文件
+.DS_Store
+Thumbs.db
+
+# 忽略 Spring Boot 生成的 JAR 文件
+*.jar
+*.war
+
+# 忽略依赖库（如果使用 Maven/Gradle）
+/.mvn/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/mvn-wrapper.properties
+
+# 如果使用 Node.js（前端）则忽略 node_modules
+node_modules/
+
+# 如果使用 Python 进行 AI 处理
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# 忽略 Docker 相关
+docker-compose.override.yml
+
+# 忽略数据库相关
+*.sqlite
+*.db
+
+# 忽略敏感数据配置文件
+application-*.yml
