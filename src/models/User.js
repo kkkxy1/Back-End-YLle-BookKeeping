@@ -14,6 +14,15 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 6
   },
+  wechatOpenId: {
+    type: String,
+    unique: true,
+    sparse: true
+  },
+  wechatUnionId: {
+    type: String,
+    sparse: true
+  },
   createdAt: {
     type: Date,
     default: Date.now
