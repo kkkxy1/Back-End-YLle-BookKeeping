@@ -9,6 +9,10 @@ router.get('/health', (req, res) => {
   });
 });
 
+// 挂载认证路由
+const authRouter = require('./auth');
+router.use('/auth', authRouter);
+
 // 其他路由模块将在这里挂载
 // router.use('/bookkeeping', require('./bookkeeping'));
 

@@ -3,9 +3,13 @@ require('dotenv').config();
 
 const app = require('./app');
 const http = require('http');
+const connectDB = require('./config/database');
 
 // 获取环境变量配置
 const PORT = process.env.PORT || 3000;
+
+// 连接数据库
+connectDB();
 
 // 创建HTTP服务器
 const server = http.createServer(app);

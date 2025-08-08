@@ -24,13 +24,7 @@ tests/             # 测试用例
 npm install
 ```
 
-2. 配置环境变量：
-复制`.env.example`为`.env`并修改配置：
-```bash
-cp .env.example .env
-```
-
-3. 启动开发服务器：
+2. 启动开发服务器：
 ```bash
 npm run dev
 ```
@@ -38,7 +32,6 @@ npm run dev
 ## API端点
 
 - `GET /` - 欢迎页面
-- `GET /api/health` - 服务健康检查
 
 ## 开发脚本
 
