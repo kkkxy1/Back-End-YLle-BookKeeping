@@ -31,7 +31,7 @@ exports.register = async (req, res) => {
     const token = jwt.sign(
       { id: newUser._id },
       process.env.JWT_SECRET,
-      { expiresIn: process.env.JWT_EXPIRES_IN || '1d' }
+      { expiresIn: '7d' }
     );
     
     // 5. 发送响应
@@ -86,7 +86,7 @@ exports.login = async (req, res) => {
     const token = jwt.sign(
       { id: user._id },
       process.env.JWT_SECRET,
-      { expiresIn: process.env.JWT_EXPIRES_IN || '1d' }
+      { expiresIn: '7d' }
     );
     
     // 5. 发送响应
