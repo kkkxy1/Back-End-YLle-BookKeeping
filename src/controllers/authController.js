@@ -90,6 +90,7 @@ exports.wechatLogin = async (req, res) => {
 
 // 保存或更新用户信息的接口 (需要用户已登录)
 exports.updateUserInfo = async (req, res) => {
+  // console.log(req.body);
   try {
     // 1. 从 JWT 验证中间件获取当前用户
     const userId = req.user._id;
